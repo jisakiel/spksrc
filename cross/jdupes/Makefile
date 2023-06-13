@@ -6,7 +6,7 @@ PKG_DIST_SITE = https://github.com/jbruchon/jdupes/archive
 PKG_DIST_FILE = $(PKG_NAME)-$(PKG_VERS).$(PKG_EXT)
 PKG_DIR = $(PKG_NAME)-$(PKG_VERS)
 
-DEPENDS = cross/libjodycody
+DEPENDS = cross/libjodycode
 
 HOMEPAGE = https://github.com/jbruchon/jdupes
 COMMENT  = A powerful duplicate file finder and an enhanced fork of fdupes.
@@ -16,6 +16,5 @@ CONFIGURE_TARGET = nop
 INSTALL_MAKE_OPTIONS = install DESTDIR=$(INSTALL_DIR) PREFIX=$(INSTALL_PREFIX)
 
 ADDITIONAL_CFLAGS = -DENABLE_DEDUPE
-PATCHES_LEVEL = 1
 
 include ../../mk/spksrc.cross-cc.mk
