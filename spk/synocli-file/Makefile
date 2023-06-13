@@ -1,6 +1,6 @@
 SPK_NAME = synocli-file
 SPK_VERS = 2.7
-SPK_REV = 20 
+SPK_REV = 20
 SPK_ICON = src/synocli-file.png
 
 # packages depending on cross/zlib must be defined later, see below
